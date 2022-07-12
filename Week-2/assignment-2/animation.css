@@ -32,7 +32,7 @@ body {
     transform-origin: 100% 100%;
 }
 
-.rows {
+.box-container, .rows {
     font-size: 0;
 }
 
@@ -54,4 +54,15 @@ body {
 .box-container:hover .box-four{
     transform: rotate(90deg);
     transform-origin: 100% 100%;
+}
+
+#hi {
+    font-size: 5rem;
+    position: relative;
+    left: 7rem;
+}
+
+.box-container {
+    position: relative;
+    left: -7rem;
 }
