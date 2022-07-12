@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+}
+
+.box-one {
+    background-color: red;
+    transition: transform 1s ease-out;
+    transform-origin: 0 0;
+}
+.box-two {
+    background-color: yellow;
+    transition: transform 1s ease-out;
+    transform-origin: 100% 0;
+}
+.box-three {
+    background-color: blue;
+    transition: transform 1s ease-out;
+    transform-origin: 0 100%;
+}
+.box-four {
+    background-color: green;
+    transition: transform 1s ease-out;
+    transform-origin: 100% 100%;
+}
+
+.rows {
+    font-size: 0;
+}
+
+.box-container:hover .box-one{
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+}
+
+.box-container:hover .box-two{
+    transform: rotate(-90deg);
+    transform-origin: 100% 0;
+}
+
+.box-container:hover .box-three{
+    transform: rotate(-90deg);
+    transform-origin: 0 100%;
+}
+
+.box-container:hover .box-four{
+    transform: rotate(90deg);
+    transform-origin: 100% 100%;
+}
