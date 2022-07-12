@@ -1,0 +1,62 @@
+html {
+    font: 62.5%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.table {
+    display: flex;
+}
+
+.column {
+    margin: 0 0.5rem;
+}
+
+.box-container {
+    display: flex;
+}
+
+.box {
+    margin: 0 0.5rem;
+}
+
+img {
+    width: 90vw;
+    height: 50vh;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+.form-fields {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    /* img {
+        float: left;
+    } */
+    .box-container {
+        display: block;
+        width: 50vw;
+        align-self: center;
+    }
+    .outer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .image-area {
+        width: 50vw;
+    }
+    img {
+        width: 20rem;
+        height: 20rem;
+        margin: 2rem 2rem;
+        text-align: center;
+    }
+    form {
+        clear: both;
+    }
+}
+
