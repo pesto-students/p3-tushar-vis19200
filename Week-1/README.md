@@ -32,7 +32,7 @@ The first step is processing the HTML markup and building the DOM tree. HTML par
 
 The DOM tree describes the content of the document. The <html> element is the first tag and root node of the document tree. The tree reflects the relationships and hierarchies between different tags. Tags nested within other tags are child nodes. The greater the number of DOM nodes, the longer it takes to construct the DOM tree.
 
-![alt text](/assignment-1/dom.png?raw=true)
+![DOM Tree](./assignment-1/dom.png?raw=true)
 
 The DOM tree for our sample code, showing all the nodes, including text nodes.
 When the parser finds non-blocking resources, such as an image, the browser will request those resources and continue parsing. Parsing can continue when a CSS file is encountered, but <script> tags—particularly those without an async or defer attribute—block rendering, and pause the parsing of HTML. Though the browser's preload scanner hastens this process, excessive scripts can still be a significant bottleneck.
